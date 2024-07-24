@@ -1,0 +1,72 @@
+1. May oyida TypeScript (ZTM) ni va JS ni ko'rib tugatish.
+https://ui.dev/javascript-visualizer
+
+select * from departments;
+
+select * from employees;
+
+select emp.department_id, emp.first_name, dep.department_name  
+	from employees emp, departments dep 
+	where emp.department_id = dep.department_id;
+	
+
+select emp.department_id, emp.first_name from employees emp
+union 
+select dep.department_id, dep.department_name from departments dep
+
+
+select emp.department_id, emp.first_name, dep.department_name from employees emp
+join departments dep on(emp.department_id = dep.department_id)
+
+=============================================================================
+=============================================================================
+=============================================================================
+=============================================================================
+=============================================================================
+
+
+Inervyu
+https://github.com/lydiahallie/javascript-questions
+https://typescript-definitive-guide.ru/
+
+6. Cascading and specificity rules css
+7. Object.create() and Object.assign()
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = Object.assign({}, user);
+8.Garbage collector https://learn.javascript.ru/garbage-collection
+9. THIS keyword
+let user = {
+  name: "John",
+  f:this,
+  foo(){
+      return this;
+  },
+  bar:()=> {
+      return this;
+  }
+};
+10. Imperative vs declarative.
+11. reduce(), reduceRight(), fill(), copyWithin(), flat() in Array
+12. Concurrency model in javascript and Event loop
+13. keydown vs keypress vs keyup in javascript
+14. Function composition
+15. +++ TDZ in JS
+16. TS da interface va type ni farqi
+17. Losing this javascript
+18. What are Type Predicates in Typescript?
+https://dev.to/lydiahallie/cs-visualized-cors-5b8h
+https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
+19. Which one first renders child component or parent in react
+https://stackoverflow.com/questions/52963657/which-renders-first-child-or-parent-in-reactjs#:~:text=Child's%20render%20function%20is%20called,receive%20it%20as%20children%20prop.
+https://github.com/facebook/react/issues/5737
+https://github.com/facebook/react/issues/15281
+https://gist.github.com/nikparo/33544fe0228dd5aa6f0de8d03e96c378#file-effect-jsx-L1
+20. https://learn.javascript.ru/generators
+21. re-fetch and pre-fetch
+
+
+
